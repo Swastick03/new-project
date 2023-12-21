@@ -11,3 +11,233 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.text1-overlay {
+  position: absolute;
+  top: 50vmin;
+  left: 20vmax;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5vmax;
+  font-weight: bold;
+  text-align: center;
+}
+.text2-overlay {
+  position: absolute;
+  top: 58vmin;
+  left: 20vmax;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.4vmax;
+  
+  text-align: center;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+.card__header img {
+  height: 12rem;  
+  object-fit: cover;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 10rem 0.5rem 10rem;
+  width: 45rem;
+  overflow: hidden;
+  box-shadow: 0 .1rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5em;
+  background: white;
+
+
+}
+
+
+
+.pnav{
+  margin: 3rem 10rem 0rem 10rem;
+}
+.hr{
+  margin: 0rem 10rem 2rem 10rem;
+}
+
+.card__body {
+  padding: 1rem 2rem 0rem 2rem;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: 1rem;
+  font-weight: 700;
+  
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+
+  
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+  
+}
+
+.user__image {
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.user__info {
+  color: #666;
+  padding: 0.5rem 0rem 0rem 0.5rem;
+}
+.user__info1{
+  color: #666;
+  padding: 0.5rem 0rem 0rem 0.5rem;
+  margin-left: 23rem;
+}
+
+.dropdown-menu{
+ position: absolute;
+  left: -17rem;
+  top: 4rem;
+  overflow: visible
+}
+
+.fa-pen{
+  padding: 0px 12px ;
+}
+.fa-location-dot{
+  padding: 0px 12px;
+}
+.fa-right-to-bracket{
+  padding: 0px 12px 0px 0px;
+}
+
+.loc-text{
+  display: inline-block;
+  position: relative;
+  left: 25rem;
+  bottom: 80rem;
+}
+.loc-input{
+  border: none; 
+  border-bottom: 0.5px solid grey; 
+  outline: none; 
+  font-weight: 500;
+  width: 12rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .join-btn{
+    position: fixed; 
+    bottom: 7rem;   
+    right: 20px;    
+    z-index: 999; 
+  }
+  .post-btn{
+    position: fixed; 
+    bottom: 3.5rem;   
+    right: 20px;    
+    z-index: 999; 
+  }
+  .navbar-toggler {
+    float: right;
+  }
+  .pnav{
+    margin: 0px;
+  }
+  .hr{
+    margin: 0px;
+    border: 0px;
+  }
+  .card{
+    width: 100%;
+    margin: 5px 0px;
+  }
+  
+.tag {
+   
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.card__footer {
+  padding: 1rem;
+}
+
+.user__image {
+  margin-left: 0.5rem;
+}
+.user__info {
+  padding: 0rem;
+}
+.user__info h5 {
+  color: grey;
+  padding-top: 5px;
+}
+.user__info1{
+  color: #666;
+  padding: 0rem ;
+  margin: 0rem 0rem 0rem 2.3rem;
+}
+.text1-overlay {
+  top:14rem;
+  left: 8rem;
+  font-size: 1.3rem;
+  
+}
+.text2-overlay {
+  position: absolute;
+  top: 15.8rem;
+  left: 8rem;
+  font-size: 0.7rem;
+}
+.pnav-text{
+  display: none;
+
+}
+.fa-pen{
+  padding: 0px;
+}
+.fa-right-to-bracket{
+  padding: 0px ;
+}
+.loc-text{
+  display: none;
+}
+
+}
+
